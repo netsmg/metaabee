@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+<head>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <!-- theme meta -->
+  <meta name="theme-name" content="dexler-sass-template" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: light)"
+    content="#fff"
+  />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: dark)"
+    content="#000"
+  />
+  <meta name="generator" content="gulp" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- responsive meta -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=5"
+  />
+
+  <!-- title -->
+  <title>Dexler Sass Template</title>
+
+  <!-- noindex robots -->
+  <meta name="robots" content="" />
+
+  <!-- meta-description -->
+  <meta name="description" content="meta description" />
+
+  <!-- author from config.json -->
+  <meta name="author" content="{config.metadata.meta_author}" />
+
+  <!-- og-title -->
+  <meta property="og:title" content="" />
+
+  <!-- og-description -->
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+
+  <!-- twitter-title -->
+  <meta name="twitter:title" content="" />
+
+  <!-- twitter-description -->
+  <meta name="twitter:description" content="" />
+
+  <!-- og-image -->
+  <meta property="og:image" content="" />
+
+  <!-- twitter-image -->
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- google font css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- styles -->
+
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.css" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/v6/brands.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/solid.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/fontawesome.css" />
+
+  <!-- Main Stylesheet -->
+  <link href="styles/main.css" rel="stylesheet" />
+</head>
+
+<header class="header">
+    <nav class="navbar container">
+        <!-- logo -->
+        <div class="order-0">
+            <a href="index.html">
+                <img src="images/logo.svg" height="31" width="139" alt="" />
+            </a>
+        </div>
+        <!-- navbar toggler -->
+        <input id="nav-toggle" type="checkbox" class="hidden" />
+        <label id="show-button" for="nav-toggle" class="text-black order-2 flex cursor-pointer items-center lg:order-1 lg:hidden">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Open</title>
+                <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+            </svg>
+        </label>
+        <label id="hide-button" for="nav-toggle" class="text-black order-2 hidden cursor-pointer items-center lg:order-1">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Close</title>
+                <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+            </svg>
+        </label>
+        <!-- /navbar toggler -->
+        <ul id="nav-menu" class="navbar-nav order-3 lg:items-center hidden w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2 pb-3 lg:pb-0">
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="service.html" class="nav-link">
+                    service
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="pricing.html" class="nav-link">
+                    Pricing
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="blog.html" class="nav-link">
+                    Blog
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="#" class="nav-link inline-flex items-center">
+                    Pages
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </a>
+                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                    <li class="nav-dropdown-item">
+                        <a href="careers.html" class="nav-dropdown-link block"> Careers </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="how-it-works.html" class="nav-dropdown-link block"> How it works </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="our-team.html" class="nav-dropdown-link block"> Our team </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="job-details.html" class="nav-dropdown-link block"> Job Details </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="blog-single.html" class="nav-dropdown-link block"> Blog Single </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="contact.html" class="nav-dropdown-link block"> Contact </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item lg:hidden mt-3.5">
+                <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                    Start journey
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                </div>
+            </li>
+        </ul>
+        <div class="order-1 ml-auto items-center lg:order-2 lg:ml-0 hidden lg:flex">
+            <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                Start journey
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body><section class="pt-28 lg:pt-[206px] pb-12 lg:pb-20 relative">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.36]">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="row lg:col-11 xl:col-10 items-center lg:gx-5">
+                <div class="lg:col-7 lg:order-2 mb-6 lg:mb-0">
+                    <img class="w-full rounded-xl shadow max-h-[474px] object-cover" src="images/service-banner.png" alt="">
+                </div>
+                <div class="lg:col-5 lg:order-1">
+                    <h1 class="h2 mb-4 highlighted">Optimize your entire
+                        <span>hiring</span> process</h1>
+                    <p class="mb-10">A discovery that has given greater importance to the Lorem
+                        ipsum which has remained on the crest of the wave since
+                        500, that is when, according to Professor Richard McClintock</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Stay in Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Integration -->
+<section class="section-bordered mt-0">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="row lg:col-11 xl:col-10 justify-center">
+                <div class="lg:col-10 xl:col-8 mb-14 text-center">
+                    <h2 class="section-title">Integrate with the systems <br>
+                        you care <span>about</span></h2>
+                    <p class="mb-12">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+                        ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <a href="#" class="btn btn-primary">learn more</a>
+                </div>
+                <div class="lg:col-11 xl:col-10">
+                    <img class="mx-auto max-w-[946px] w-full rounded-xl" src="images/service-img-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Integration -->
+
+<!-- Solutions -->
+<section class="section-bordered relative">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.16]">
+        <img src="images/common-bg.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-6 text-center mb-14">
+                <h2 class="section-title mb-0">Our team creates special <span>solutions</span>
+                    to solve your problems</h2>
+            </div>
+            <div class="row lg:col-11 xl:col-10 gy-4 -mt-6">
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Vendor Management
+                            System (VMS)</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Purchase-to-Pay with FMS
+                            HRIS Integration Extensions</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Code Testing /VMS
+                            Enhancements</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Statement of Work (SOW)</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Job Board / Gig Portal</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-6 lg:col-4">
+                    <div class="px-8 py-10 text-center rounded-xl border border-border h-full hover:bg-white transition-all duration-300 hover:shadow group relative">
+                        <h5 class="mb-4 capitalize">Market Intelligence (MI)</h5>
+                        <p class="mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrum</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm group-hover:bg-primary group-hover:text-white stretched-link">
+                            Read more
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Solutions -->
+
+<!-- latest jobs -->
+<section class="section-bordered">
+    <div class="container">
+        <div class="row mx-0 border border-border rounded-2xl justify-center">
+            <div class="lg:col-11 xl:col-10">
+                <div class="text-center mb-14">
+                    <h2 class="section-title mb-5">
+                        <span>Latest Jobs</span>
+                    </h2>
+                    <p>Job Recommendations for You</p>
+                </div>
+                <div class="swiper jobs-carousel pr-[1px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide h-auto relative">
+                            <div class="px-8 py-10 hover:bg-white rounded-xl border border-border h-full hover:shadow transition-all duration-300">
+                                <h5 class="mb-4 capitalize">Senior Governance Risk
+                                    & Compliance (GRC)</h5>
+                                <ul>
+                                    <li class="flex items-center mb-2">
+                                        <img class="mr-1.5" src="images/svgs/location-pin.svg" alt="">
+                                        Netherlands
+                                    </li>
+                                    <li class="flex items-center">
+                                        <img class="mr-1.5" src="images/svgs/clock.svg" alt="">
+                                        Full Time
+                                    </li>
+                                </ul>
+                                <div class="text-end -mt-4">
+                                    <a class="w-8 h-8 rounded-full bg-primary/5 text-primary inline-flex items-center justify-center stretched-link" href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="px-8 py-10 hover:bg-white rounded-xl border border-border h-full hover:shadow transition-all duration-300">
+                                <h5 class="mb-4 capitalize">Financial Administrative
+                                    Assistant</h5>
+                                <ul>
+                                    <li class="flex items-center mb-2">
+                                        <img class="mr-1.5" src="images/svgs/location-pin.svg" alt="">
+                                        Hyderabad, Telangana, India
+                                    </li>
+                                    <li class="flex items-center">
+                                        <img class="mr-1.5" src="images/svgs/clock.svg" alt="">
+                                        Full Time
+                                    </li>
+                                </ul>
+                                <div class="text-end -mt-4">
+                                    <a class="w-8 h-8 rounded-full bg-primary/5 text-primary inline-flex items-center justify-center stretched-link" href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="px-8 py-10 hover:bg-white rounded-xl border border-border h-full hover:shadow transition-all duration-300">
+                                <h5 class="mb-4 capitalize">Associate Project general
+                                    sourcing manager</h5>
+                                <ul>
+                                    <li class="flex items-center mb-2">
+                                        <img class="mr-1.5" src="images/svgs/location-pin.svg" alt="">
+                                        Netherlands
+                                    </li>
+                                    <li class="flex items-center">
+                                        <img class="mr-1.5" src="images/svgs/clock.svg" alt="">
+                                        Full Time
+                                    </li>
+                                </ul>
+                                <div class="text-end -mt-4">
+                                    <a class="w-8 h-8 rounded-full bg-primary/5 text-primary inline-flex items-center justify-center stretched-link" href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-bullets jobs-carousel-pagination text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end latest jobs -->
+
+<!-- benefits -->
+<section class="section-bordered relative">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.16]">
+        <img src="images/common-bg.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-6 text-center mb-14">
+                <h2 class="section-title">DataSource <span>Benefits</span></h2>
+                <p>Our benefits help you to find balance between work and life.</p>
+            </div>
+            <div class="lg:col-11 xl:col-10">
+                <div class="swiper benefits-slider pr-[1px]">
+                    <div class="swiper-wrapper">
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/beating-heart.svg" alt="">
+                            <h3 class="h4">Your Health</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/family.svg" alt="">
+                            <h3 class="h4">Your Family
+                                Life</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/reward.svg" alt="">
+                            <h3 class="h4">Total Rewards</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/recharge.svg" alt="">
+                            <h3 class="h4">Your Time to
+                                Recharge</h3>
+                        </div>
+                    </div>
+                    <div class="benefits-slider-pagination swiper-bullets text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end benefits -->
+
+<!-- Call to Action -->
+<section class="cta section-bordered">
+    <div class="container">
+        <div class="row mx-0 relative justify-center">
+            <div class="col-12">
+                <img class="absolute -z-[1] top-0 left-0 w-full h-full" src="images/cta-bg.png" alt="">
+            </div>
+            <div class="lg:col-10 text-center">
+                <div class="shadow rounded-xl bg-white/40 py-20 border border-border">
+                    <div class="md:max-w-[588px] mx-auto">
+                        <h2 class="mb-6 highlighted">Do you want to be a part <br>
+                            of our <span>team</span>?</h2>
+                        <p class="mb-6">All our premium themes are designed elegantly with blazing speed
+                            themes even score above% in Google page speed.</p>
+                        <a href="#" class="btn btn-primary">Start journey</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><footer class="footer bg-dark">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-10 footer-grid pt-[100px] pb-16">
+                <div class="footer-col lg:max-w-[270px] mb-10 lg:mb-0">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <p class="mb-10">Lorem ipsum dolor sit sed dmi amet
+                        consectetur adipiscing. Cdo tellus
+                        sed condimentum volutpat. </p>
+                    <span class="inline-block font-semibold text-lg font-primary mb-2">Follow us</span>
+                    <ul class="social-icons footer-social-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>Products</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Partner</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Information</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Take the Tour</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>About</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Leadership</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Cookie Preferences</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Legal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>What We Offer</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">Products</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Support</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Migration Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:col-10 row py-8 text-center border-[#4B4B4B] border-t">
+                <p class="text-sm text-[#ABABAB]">Designed By <a class="underline hover:text-pri
+                    " href="https:www.themefisher.com">Themefisher</a>, Developed by <a class="underline hover:text-pri
+                    " href="https://gethugothemes.com/">Gethugothemes</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
+<!-- Swiper JS -->
+<script src="plugins/swiper/swiper-bundle.js"></script>
+<!-- Shuffle JS -->
+<script src="plugins/shuffle/shuffle.js"></script>
+
+<!-- Main Script -->
+<script src="scripts/main.js"></script>
+</body>
+</html>

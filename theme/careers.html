@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+<head>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <!-- theme meta -->
+  <meta name="theme-name" content="dexler-sass-template" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: light)"
+    content="#fff"
+  />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: dark)"
+    content="#000"
+  />
+  <meta name="generator" content="gulp" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- responsive meta -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=5"
+  />
+
+  <!-- title -->
+  <title>Dexler Sass Template</title>
+
+  <!-- noindex robots -->
+  <meta name="robots" content="" />
+
+  <!-- meta-description -->
+  <meta name="description" content="meta description" />
+
+  <!-- author from config.json -->
+  <meta name="author" content="{config.metadata.meta_author}" />
+
+  <!-- og-title -->
+  <meta property="og:title" content="" />
+
+  <!-- og-description -->
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+
+  <!-- twitter-title -->
+  <meta name="twitter:title" content="" />
+
+  <!-- twitter-description -->
+  <meta name="twitter:description" content="" />
+
+  <!-- og-image -->
+  <meta property="og:image" content="" />
+
+  <!-- twitter-image -->
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- google font css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- styles -->
+
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.css" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/v6/brands.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/solid.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/fontawesome.css" />
+
+  <!-- Main Stylesheet -->
+  <link href="styles/main.css" rel="stylesheet" />
+</head>
+
+<header class="header">
+    <nav class="navbar container">
+        <!-- logo -->
+        <div class="order-0">
+            <a href="index.html">
+                <img src="images/logo.svg" height="31" width="139" alt="" />
+            </a>
+        </div>
+        <!-- navbar toggler -->
+        <input id="nav-toggle" type="checkbox" class="hidden" />
+        <label id="show-button" for="nav-toggle" class="text-black order-2 flex cursor-pointer items-center lg:order-1 lg:hidden">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Open</title>
+                <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+            </svg>
+        </label>
+        <label id="hide-button" for="nav-toggle" class="text-black order-2 hidden cursor-pointer items-center lg:order-1">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Close</title>
+                <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+            </svg>
+        </label>
+        <!-- /navbar toggler -->
+        <ul id="nav-menu" class="navbar-nav order-3 lg:items-center hidden w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2 pb-3 lg:pb-0">
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="service.html" class="nav-link">
+                    service
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="pricing.html" class="nav-link">
+                    Pricing
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="blog.html" class="nav-link">
+                    Blog
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="#" class="nav-link inline-flex items-center">
+                    Pages
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </a>
+                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                    <li class="nav-dropdown-item">
+                        <a href="careers.html" class="nav-dropdown-link block"> Careers </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="how-it-works.html" class="nav-dropdown-link block"> How it works </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="our-team.html" class="nav-dropdown-link block"> Our team </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="job-details.html" class="nav-dropdown-link block"> Job Details </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="blog-single.html" class="nav-dropdown-link block"> Blog Single </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="contact.html" class="nav-dropdown-link block"> Contact </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item lg:hidden mt-3.5">
+                <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                    Start journey
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                </div>
+            </li>
+        </ul>
+        <div class="order-1 ml-auto items-center lg:order-2 lg:ml-0 hidden lg:flex">
+            <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                Start journey
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body><section class="pt-28 lg:pt-[206px] pb-12 lg:pb-20 relative overflow-hidden">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.36]">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="row lg:col-11 xl:col-10 items-center gx-5">
+                <div class="lg:col-7 lg:order-2 mb-8 lg:mb-0">
+                    <img class="w-full rounded-xl shadow-lg" src="images/career-banner.png" alt="">
+                </div>
+                <div class="lg:col-5 lg:order-1">
+                    <h1 class="h2 mb-4 highlighted">Hire Great <span>People</span></h1>
+                    <p class="mb-10">A discovery that has given greater importance to the Lorem
+                        ipsum which has remained on the crest of the wave since
+                        500, that is when, according to Professor Richard McClintock</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Stay in Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- brands -->
+<div class="brands py-10">
+    <div class="container">
+        <div class="text-center mb-14">
+            <h2 class="h4 capitalize highlighted">best <span>customer experiences</span> with DataSource</h2>
+        </div>
+        <div class="overflow-hidden">
+            <div class="swiper brands-carousel cursor-pointer">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/brands/company-logo-6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end brands -->
+
+<section class="section-bordered mt-20">
+    <div class="container">
+        <div class="relative row justify-center mb-20 lg:mb-[120px]">
+            <div class="absolute left-0 top-0 h-full w-full grained-bg opacity-[0.16]">
+                <img src="images/common-bg.png" alt="">
+            </div>
+            <div class="lg:col-10">
+                <div class="row items-center gx-5">
+                    <div class="lg:col-7 lg:order-2 mb-6 lg:mb-0">
+                        <div class="border-border border rounded-xl p-6">
+                            <img class="border-border border rounded-xl drop-shadow-[0px_4px_54px_rgba(0,0,0,0.08)]" src="images/career-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:col-5 order-2 lg:order-1">
+                        <h2 class="section-title">
+                            Our Values
+                        </h2>
+                        <p class="mb-8">suitable fulltime and temporary candidates. Publish job vacancies all major sites to broaden your reach – and access a global candidate warehouse offers thousands of pre-vetted technical, professional, and scientific candidates.</p>
+                        <a class="btn btn-primary" href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative row justify-center mb-20 lg:mb-[120px]">
+            <div class="absolute left-0 top-0 h-full w-full grained-bg opacity-[0.16]">
+                <img src="images/common-bg.png" alt="">
+            </div>
+            <div class="lg:col-11 xl:col-10">
+                <div class="row items-center gx-5">
+                    <div class="lg:col-7 mb-6 lg:mb-0">
+                        <div class="border-border border rounded-xl p-6">
+                            <img class="border-border border rounded-xl drop-shadow-[0px_4px_54px_rgba(0,0,0,0.08)]" src="images/career-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:col-5">
+                        <h2 class="section-title">
+                            Our Investment in You
+                        </h2>
+                        <p class="mb-8">suitable fulltime and temporary candidates. Publish job vacancies all major sites to broaden your reach – and access a global candidate warehouse offers thousands of pre-vetted technical, professional, and scientific candidates.</p>
+                        <a class="btn btn-primary" href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative row justify-center mb-20 lg:mb-[120px]">
+            <div class="absolute left-0 top-0 h-full w-full grained-bg opacity-[0.16]">
+                <img src="images/common-bg.png" alt="">
+            </div>
+            <div class="lg:col-11 xl:col-10">
+                <div class="row items-center gx-5">
+                    <div class="lg:col-7 lg:order-2 mb-6 lg:mb-0">
+                        <div class="border-border border rounded-xl p-6">
+                            <img class="border-border border rounded-xl drop-shadow-[0px_4px_54px_rgba(0,0,0,0.08)]" src="images/career-img-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:col-5 order-2 lg:order-1">
+                        <h2 class="section-title">
+                            Our World as Our Workplace
+                        </h2>
+                        <p class="mb-8">suitable fulltime and temporary candidates. Publish job vacancies all major sites to broaden your reach – and access a global candidate warehouse offers thousands of pre-vetted technical</p>
+                        <a class="btn btn-primary" href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- benefits -->
+<section class="section-bordered relative">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.16]">
+        <img src="images/common-bg.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-6 text-center mb-14">
+                <h2 class="section-title">Dexler <span>Benefits</span></h2>
+                <p>Our benefits help you to find balance between work and life.</p>
+            </div>
+            <div class="lg:col-10">
+                <div class="swiper benefits-slider">
+                    <div class="swiper-wrapper cursor-move">
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/beating-heart.svg" alt="">
+                            <h3 class="h4">Your Health</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/family.svg" alt="">
+                            <h3 class="h4">Your Family
+                                Life</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/reward.svg" alt="">
+                            <h3 class="h4">Total Rewards</h3>
+                        </div>
+                        <div class="border border-border rounded-xl swiper-slide px-10 py-12 h-auto text-center hover:bg-white hover:shadow transition-all duration-300">
+                            <img class="mb-6 mx-auto w-12 h-12" src="images/svgs/recharge.svg" alt="">
+                            <h3 class="h4">Your Time to
+                                Recharge</h3>
+                        </div>
+                    </div>
+                    <div class="benefits-slider-pagination swiper-bullets text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end benefits -->
+
+
+<!-- Interviews -->
+<section class="section-bordered">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-6 mb-14 text-center">
+                <h2 class="section-title mb-0">How we get to know each other
+                    during the <span>interview</span></h2>
+            </div>
+            <div class="lg:col-10 row gy-4 -mt-6 px-0 lg:px-3">
+                <div class="md:col-6">
+                    <div class="shadow border border-border p-14 bg-white text-center rounded-xl h-full">
+                        <img class="mx-auto w-16 h-16 mb-8" src="images/svgs/interview-icon-1.svg" alt="">
+                        <h3 class="mb-9">1. Recruiter <br>
+                            Interview</h3>
+                        <p>Lorem ipsum dolor sit amet . The graphic and typographic
+                            operators know this well, in reality all the professions
+                            dealing with the universe of communication have a
+                            stable relationship with these words, but what is it?</p>
+                    </div>
+                </div>
+                <div class="md:col-6">
+                    <div class="shadow border border-border p-14 bg-white text-center rounded-xl h-full">
+                        <img class="mx-auto w-16 h-16 mb-8" src="images/svgs/interview-icon-2.svg" alt="">
+                        <h3 class="mb-9">2. Hiring Manager <br>
+                            Interview</h3>
+                        <p>Lorem ipsum dolor sit amet . The graphic and typographic
+                            operators know this well, in reality all the professions
+                            dealing with the universe of communication have a
+                            stable relationship with these words, but what is it?</p>
+                    </div>
+                </div>
+                <div class="md:col-6">
+                    <div class="shadow border border-border p-14 bg-white text-center rounded-xl h-full">
+                        <img class="mx-auto w-16 h-16 mb-8" src="images/svgs/interview-icon-3.svg" alt="">
+                        <h3 class="mb-9">3. Panel <br>
+                            Interview</h3>
+                        <p>Lorem ipsum dolor sit amet . The graphic and typographic
+                            operators know this well, in reality all the professions
+                            dealing with the universe of communication have a
+                            stable relationship with these words, but what is it?</p>
+                    </div>
+                </div>
+                <div class="md:col-6">
+                    <div class="shadow border border-border p-14 bg-white text-center rounded-xl h-full">
+                        <img class="mx-auto w-16 h-16 mb-8" src="images/svgs/interview-icon-4.svg" alt="">
+                        <h3 class="mb-9">4. Career Trajectory <br>
+                            Discussion</h3>
+                        <p>Lorem ipsum dolor sit amet . The graphic and typographic
+                            operators know this well, in reality all the professions
+                            dealing with the universe of communication have a
+                            stable relationship with these words, but what is it?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end interviews -->
+
+
+<!-- work -->
+<section class="section-bordered">
+    <div class="container">
+        <div class="row relative justify-center">
+            <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.16]">
+                <img src="images/common-bg.png" alt="">
+            </div>
+            <div class="lg:col-8 text-center mb-14">
+                <h2 class="section-title">Work <span>Should</span> Be Fun!</h2>
+                <p>It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense but give life to a test text useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.</p>
+            </div>
+            <div class="lg:col-11 xl:col-10 row justify-center">
+                <div class="lg:col-8 row gy-4 -mt-6 px-0 lg:px-3">
+                    <div class="md:col-6 px-0 md:px-3">
+                        <img class="rounded-xl w-full h-full" src="images/work-img-1.png" alt="">
+                    </div>
+                    <div class="md:col-6 px-0 md:px-3">
+                        <img class="rounded-xl w-full h-full" src="images/work-img-2.png" alt="">
+                    </div>
+                    <div class="md:col-6 px-0 md:px-3">
+                        <img class="rounded-xl w-full h-full" src="images/work-img-3.png" alt="">
+                    </div>
+                    <div class="md:col-6 px-0 md:px-3">
+                        <img class="rounded-xl w-full h-full" src="images/work-img-4.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-4 mt-6 lg:mt-0">
+                    <img class="rounded-xl w-full h-full" src="images/work-img-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end work -->
+
+<!-- current opening -->
+<section class="section-bordered">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-6 mb-14 text-center">
+                <h2 class="section-title mb-0">Current <span>Openings</span></h2>
+            </div>
+            <div class="lg:col-11 xl:col-10">
+                <div class="swiper jobs-slider pr-[1px]">
+                    <div class="swiper-wrapper cursor-move">
+                        <div class="swiper-slide">
+                            <div class="row gy-4">
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Test Automation Engineer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Chicago, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Financial Administrative Assistant</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Sydney, Australia . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Client Support Rep</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> San Francisco, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Full Stack PHP Developer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Stockholm, Europe . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row gy-4">
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Test Automation Engineer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Chicago, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Financial Administrative Assistant</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Sydney, Australia . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Client Support Rep</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> San Francisco, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Full Stack PHP Developer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Stockholm, Europe . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row gy-4">
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Test Automation Engineer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Chicago, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Financial Administrative Assistant</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Sydney, Australia . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Client Support Rep</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> San Francisco, USA . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                                <div class="md:col-6">
+                                    <div class="shadow border border-border p-7 xl:p-14 bg-white rounded-xl h-full">
+                                        <h4 class="h5 mb-1">Full Stack PHP Developer</h4>
+                                        <p class="mb-8"><i class="fa fa-location-dot text-primary mr-1"></i> Stockholm, Europe . <span class="ml-1.5 text-primary">Full Time</span> </p>
+                                        <p class="mb-10">Lorem ipsum dolor sit amet . The graphic and typographic
+                                            operators know this well, in reality all the professions
+                                            dealing with the universe of communication</p>
+                                        <a href="#" class="btn btn-outline-primary">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs-slider-pagination swiper-bullets text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end current opening --><footer class="footer bg-dark">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-10 footer-grid pt-[100px] pb-16">
+                <div class="footer-col lg:max-w-[270px] mb-10 lg:mb-0">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <p class="mb-10">Lorem ipsum dolor sit sed dmi amet
+                        consectetur adipiscing. Cdo tellus
+                        sed condimentum volutpat. </p>
+                    <span class="inline-block font-semibold text-lg font-primary mb-2">Follow us</span>
+                    <ul class="social-icons footer-social-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>Products</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Partner</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Information</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Take the Tour</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>About</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Leadership</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Cookie Preferences</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Legal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>What We Offer</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">Products</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Support</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Migration Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:col-10 row py-8 text-center border-[#4B4B4B] border-t">
+                <p class="text-sm text-[#ABABAB]">Designed By <a class="underline hover:text-pri
+                    " href="https:www.themefisher.com">Themefisher</a>, Developed by <a class="underline hover:text-pri
+                    " href="https://gethugothemes.com/">Gethugothemes</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
+<!-- Swiper JS -->
+<script src="plugins/swiper/swiper-bundle.js"></script>
+<!-- Shuffle JS -->
+<script src="plugins/shuffle/shuffle.js"></script>
+
+<!-- Main Script -->
+<script src="scripts/main.js"></script>
+</body>
+</html>

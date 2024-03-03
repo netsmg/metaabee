@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+<head>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <!-- theme meta -->
+  <meta name="theme-name" content="dexler-sass-template" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: light)"
+    content="#fff"
+  />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: dark)"
+    content="#000"
+  />
+  <meta name="generator" content="gulp" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- responsive meta -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=5"
+  />
+
+  <!-- title -->
+  <title>Dexler Sass Template</title>
+
+  <!-- noindex robots -->
+  <meta name="robots" content="" />
+
+  <!-- meta-description -->
+  <meta name="description" content="meta description" />
+
+  <!-- author from config.json -->
+  <meta name="author" content="{config.metadata.meta_author}" />
+
+  <!-- og-title -->
+  <meta property="og:title" content="" />
+
+  <!-- og-description -->
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+
+  <!-- twitter-title -->
+  <meta name="twitter:title" content="" />
+
+  <!-- twitter-description -->
+  <meta name="twitter:description" content="" />
+
+  <!-- og-image -->
+  <meta property="og:image" content="" />
+
+  <!-- twitter-image -->
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- google font css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- styles -->
+
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.css" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/v6/brands.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/solid.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/v6/fontawesome.css" />
+
+  <!-- Main Stylesheet -->
+  <link href="styles/main.css" rel="stylesheet" />
+</head>
+
+<header class="header">
+    <nav class="navbar container">
+        <!-- logo -->
+        <div class="order-0">
+            <a href="index.html">
+                <img src="images/logo.svg" height="31" width="139" alt="" />
+            </a>
+        </div>
+        <!-- navbar toggler -->
+        <input id="nav-toggle" type="checkbox" class="hidden" />
+        <label id="show-button" for="nav-toggle" class="text-black order-2 flex cursor-pointer items-center lg:order-1 lg:hidden">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Open</title>
+                <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+            </svg>
+        </label>
+        <label id="hide-button" for="nav-toggle" class="text-black order-2 hidden cursor-pointer items-center lg:order-1">
+            <svg class="h-6 fill-current" viewBox="0 0 20 20">
+                <title>Menu Close</title>
+                <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+            </svg>
+        </label>
+        <!-- /navbar toggler -->
+        <ul id="nav-menu" class="navbar-nav order-3 lg:items-center hidden w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2 pb-3 lg:pb-0">
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="service.html" class="nav-link">
+                    service
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="pricing.html" class="nav-link">
+                    Pricing
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="blog.html" class="nav-link">
+                    Blog
+                </a>
+            </li>
+            <li class="nav-item nav-dropdown group relative">
+                <a href="#" class="nav-link inline-flex items-center">
+                    Pages
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </a>
+                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                    <li class="nav-dropdown-item">
+                        <a href="careers.html" class="nav-dropdown-link block"> Careers </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="how-it-works.html" class="nav-dropdown-link block"> How it works </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="our-team.html" class="nav-dropdown-link block"> Our team </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="job-details.html" class="nav-dropdown-link block"> Job Details </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="blog-single.html" class="nav-dropdown-link block"> Blog Single </a>
+                    </li>
+                    <li class="nav-dropdown-item">
+                        <a href="contact.html" class="nav-dropdown-link block"> Contact </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item lg:hidden mt-3.5">
+                <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                    Start journey
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                </div>
+            </li>
+        </ul>
+        <div class="order-1 ml-auto items-center lg:order-2 lg:ml-0 hidden lg:flex">
+            <a class="btn btn-outline-dark btn-sm" href="contact.html">
+                Start journey
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<body><section class="relative pt-28 lg:pt-[206px] mb-10 lg:mb-0 overflow-hidden">
+    <div class="grained-bg absolute top-0 left-0 w-full h-full opacity-[0.36]">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-center mx-0">
+            <div class="lg:col-6 text-center mb-14">
+                <h1 class="h1-lg mb-6 highlighted">Get in <span>touch</span> with us</h1>
+                <p>Lorem ipsum dolor sit amet . The graphic and typographic operators <br>
+                    know this well, in reality all the professions</p>
+            </div>
+            <div class="lg:col-11 xl:col-10 row bg-white/40 py-8 lg:py-14 px-4 lg:px-10 xl:px-[78px] justify-between items-center border border-border shadow rounded-2xl">
+                <div class="lg:col-6 lg:pr-10 mb-10 lg:mb-0">
+                    <h2 class="h3 mb-4">Contact Information</h2>
+                    <p class="mb-8">Email, call, or complete the form learn how Kion
+                        management and governance challenges.</p>
+                        <ul>
+                            <li class="mb-6 relative pl-7">
+                                <i class="absolute left-0 top-1 fa fa-location-dot text-primary"></i>
+                                <h4 class="h5 mb-2">Find US :</h4>
+                                4517 Washington Ave. Manchester, Kentucky 39495
+                            </li>
+                            <li class="mb-6 relative pl-7">
+                                <i class="absolute left-0 top-1 fa-solid fa-phone text-primary"></i>
+                                <h4 class="h5 mb-2">Call Us :</h4>
+                                (629) 555-0129
+                            </li>
+                            <li class="mb-6 relative pl-7">
+                                <i class="absolute left-0 top-1 fa-solid fa-envelope text-primary"></i>
+                                <h4 class="h5 mb-2">Chat support :</h4>
+                                datasource@gmail.com
+                            </li>
+                            <li>
+                                <h4 class="h5 mb-2">Follow Us</h4>
+                                <ul class="social-icons">
+                                    <li class="my-1.5">
+                                        <a class="text-xl" href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="my-1.5">
+                                        <a class="text-xl" href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="my-1.5">
+                                        <a class="text-xl" href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="my-1.5">
+                                        <a class="text-xl" href="#">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <div class="lg:col-6 xl:col-6 lg:bg-white py-10 lg:py-14 lg:px-10 lg:shadow lg:rounded-xl">
+                    <form action="#">
+                        <div class="form-group">
+                            <input class="form-input" placeholder="Your Name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-input" placeholder="Your Email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-textarea min-h-[177px]" id="comment" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group relative">
+                            <input class="absolute left-0 top-1.5" type="checkbox" id="policy">
+                            <label class="ml-2 px-5 block" for="policy">Save my name, email, and website in this browser for the next time I comment.</label>
+                        </div>
+                        <button class="btn btn-primary block w-full" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Faqs -->
+<section class="section-bordered faqs">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-12 lg:col-6 text-center">
+                <h2 class="section-title">Popular questions <br>
+                    <span>answered</span>
+                </h2>
+            </div>
+            <div class="lg:col-11 xl:col-10">
+                <div class="grid md:grid-cols-2 gap">
+                    <div class="faqs-col">
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                Hyper-personalize, engage, and convert candidates
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                Develop and retain your employees with intelligence
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                Improve recruiter productivity through automation
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                Hire more talent, faster with Al
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faqs-col">
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                How Can I Manage Transactions?
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                How Many Should I Pay?
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                How does app work?
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                How can I manage income?
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-header" data-accordion>
+                                How to invest using this app?
+                                <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+                                    <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                    quaerat veritatis necessitatibus nemo ullam dolores aut veniam
+                                    officiis asperiores, unde quo magni repudiandae impedit iusto
+                                    voluptatum eos, aliquam, consectetur aliquid.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end faqs -->;<footer class="footer bg-dark">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="lg:col-10 footer-grid pt-[100px] pb-16">
+                <div class="footer-col lg:max-w-[270px] mb-10 lg:mb-0">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <p class="mb-10">Lorem ipsum dolor sit sed dmi amet
+                        consectetur adipiscing. Cdo tellus
+                        sed condimentum volutpat. </p>
+                    <span class="inline-block font-semibold text-lg font-primary mb-2">Follow us</span>
+                    <ul class="social-icons footer-social-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>Products</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Partner</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Information</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Take the Tour</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col mb-10 lg:mb-0">
+                    <h5>About</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">The Platform</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Leadership</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Cookie Preferences</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Legal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>What We Offer</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <a class="footer-link" href="#">Products</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Webinars/Events</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Support</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Migration Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:col-10 row py-8 text-center border-[#4B4B4B] border-t">
+                <p class="text-sm text-[#ABABAB]">Designed By <a class="underline hover:text-pri
+                    " href="https:www.themefisher.com">Themefisher</a>, Developed by <a class="underline hover:text-pri
+                    " href="https://gethugothemes.com/">Gethugothemes</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
+<!-- Swiper JS -->
+<script src="plugins/swiper/swiper-bundle.js"></script>
+<!-- Shuffle JS -->
+<script src="plugins/shuffle/shuffle.js"></script>
+
+<!-- Main Script -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
