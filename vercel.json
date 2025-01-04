@@ -7,5 +7,8 @@
         "distDir": "theme"
       }
     }
-  ]
+  ],
+  {
+  "cleanUrls": true
+}
 }
